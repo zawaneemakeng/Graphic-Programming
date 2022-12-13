@@ -1,28 +1,28 @@
 #include<stdio.h>
 #include<GL/glut.h>
 
-void show();
-void init();
+void display();
+void init2();
 
-int main(int argc, char** argv) {
+int main2(int argc, char** argv) {
 glutInit(&argc, argv);
 glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 glutInitWindowPosition(450, 100);
 glutInitWindowSize(900, 600);
 glutCreateWindow("A Simple Triangle");
 init();
-glutDisplayFunc(show);
+glutDisplayFunc(display);
 glutMainLoop();
 }
 
-void init(){
+void init2(){
 	glClearColor(1.0, 1.0, 1.0,0.0);
 	glLoadIdentity();
 	gluOrtho2D(0.0,10.0,0.0,10.0);
 	glColor3f(0.0,0.0,1.0);
 
 }
-void show(){
+void display(){
 	float x,y;
 	
 	glClear(GL_COLOR_BUFFER_BIT);
