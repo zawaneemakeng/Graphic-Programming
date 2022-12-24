@@ -17,7 +17,7 @@ glutMainLoop();
 }
 
 void init(){
-	glClearColor(1.0, 0.0, 0.0,0.0);
+	glClearColor(0.9,0.9,1.0,0.0);
 	glLoadIdentity();
 	gluOrtho2D(-10.0,10.0,-10.0,10.0);
 	glColor3f(0.0,0.0,1.0);
